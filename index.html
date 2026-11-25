@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J-S-S Decorating Services · Painter &amp; decorator · Oxfordshire</title>
+<meta name="description" content="Painting and decorating across Oxfordshire, from high-end period work to a freshen up between tenants, with skilled colour coordinating. 4.9 from 35 Google reviews. Call 07961 694463.">
+<meta name="theme-color" content="#23404F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Albert+Sans:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.27/dist/lenis.css">
+<style>
+:root{
+  --chalk:#F5F2EC; --chalk-2:#ECE7DE; --paper:#FFFDF9;
+  --ink:#1E2124; --muted:#5B5E62; --heritage:#23404F; --heritage-2:#1A3140;
+  --ochre:#C99A3B; --ochre-d:#946B1C;
+  --acc:#3E5A66;
+  --wall:#D9D4C5; --wood:#F1EDE3; --door:#3E5A66;
+  --wa:#128C4A; --line:rgba(30,33,36,.13);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --serif:"Gloock",Georgia,serif; --body:"Albert Sans",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scrollbar-color:var(--heritage) var(--chalk)}
+body{margin:0;background:var(--chalk);color:var(--ink);font:400 17px/1.62 var(--body);caret-color:var(--acc)}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1.5px}
+::selection{background:var(--acc);color:#fff}
+:focus-visible{outline:3px solid var(--ochre);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:#fff;padding:10px 14px;border-radius:8px;z-index:100}.skip:focus{left:12px}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:400;text-wrap:balance;letter-spacing:-.005em}
+h2{font-size:clamp(2.2rem,4.6vw,3.8rem);line-height:1.04}
+p{margin:0}
+.icon{width:1.15em;height:1.15em;flex:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55em;min-height:54px;padding:0 24px;border-radius:999px;font:700 1rem/1 var(--body);text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background .25s var(--ease),color .25s var(--ease),transform .15s var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn-a{background:var(--acc);color:#fff;transition:background .9s var(--ease),transform .15s var(--ease)}.btn-a:hover{filter:brightness(1.1)}
+.btn-wa{background:var(--wa);color:#fff}.btn-wa:hover{background:#0E7A40}
+
+/* nav */
+.nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .3s var(--ease),box-shadow .3s var(--ease)}
+.nav.solid{background:rgba(245,242,236,.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
+.nav-in{display:flex;align-items:center;gap:24px;height:78px}
+.mark{display:flex;align-items:baseline;gap:10px;text-decoration:none;line-height:1}
+.mark b{font:400 1.7rem/1 var(--serif);letter-spacing:.02em}
+.mark b i{font-style:normal;color:var(--acc);transition:color .9s var(--ease)}
+.mark span{font-weight:600;font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.nav-links{display:flex;gap:28px;margin-left:auto;font-weight:600;font-size:.96rem}
+.nav-links a{text-decoration:none}.nav-links a:hover{color:var(--acc)}
+.nav .btn{min-height:46px;padding:0 18px;font-size:.95rem}
+@media (max-width:920px){.nav-links{display:none}.nav .btn{margin-left:auto}}
+@media (max-width:460px){.nav .btn span{display:none}.nav .btn{padding:0 15px}.mark span{display:none}}
+
+/* hero */
+.hero{padding:128px 0 84px;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,76px);align-items:center}
+.hero h1{font-size:clamp(2.6rem,5.2vw,4.6rem);line-height:1.02}
+.hero h1 em{font-style:italic;color:var(--acc);transition:color .9s var(--ease)}
+.lede{margin-top:24px;font-size:clamp(1.05rem,1.4vw,1.18rem);color:var(--muted);max-width:46ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.proof{display:flex;align-items:center;gap:14px;margin-top:28px;font-weight:600;color:var(--muted)}
+.proof b{font:400 2.2rem/1 var(--serif);color:var(--ink)}
+.stars{display:inline-flex;gap:2px;color:var(--ochre)}
+.proof a{color:var(--ink)}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero{padding-top:110px}}
+
+.room{position:relative}
+.room-frame{border-radius:18px;overflow:hidden;box-shadow:0 40px 70px -44px rgba(30,33,36,.55),0 0 0 1px rgba(30,33,36,.06)}
+.room svg{width:100%;height:auto}
+.room [data-p]{transition:fill .9s var(--ease)}
+.room [data-p=wall]{fill:var(--wall)}
+.room [data-p=wood]{fill:var(--wood);transition-delay:.18s}
+.room [data-p=door]{fill:var(--door);transition-delay:.32s}
+.room .mo{fill:none;stroke:rgba(0,0,0,.16);stroke-width:1.2}
+.room .hl{fill:none;stroke:rgba(255,255,255,.35);stroke-width:1.2}
+.palettes{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.pal{display:inline-flex;align-items:center;gap:10px;min-height:44px;padding:0 14px 0 8px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);font:600 .92rem/1 var(--body);color:var(--ink);cursor:pointer;transition:border-color .2s var(--ease),background .2s var(--ease)}
+.pal:hover{border-color:var(--ink)}
+.pal[aria-pressed=true]{border-color:var(--ink);background:var(--ink);color:#fff}
+.pal .sw{display:flex}
+.pal .sw i{width:16px;height:16px;border-radius:50%;margin-left:-5px;box-shadow:0 0 0 2px var(--paper)}
+.pal .sw i:first-child{margin-left:0}
+.pal[aria-pressed=true] .sw i{box-shadow:0 0 0 2px var(--ink)}
+.room-cap{margin-top:12px;color:var(--muted);font-size:.92rem}
+
+/* range */
+.range{background:var(--paper);padding:clamp(90px,11vw,140px) 0;border-top:1px solid var(--line)}
+.range-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(24px,5vw,70px);align-items:end}
+.range-head p{color:var(--muted);font-size:1.06rem;max-width:46ch}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:56px;border-top:1.5px solid var(--ink)}
+.col{padding:26px 22px 8px 0;border-right:1px solid var(--line)}
+.col + .col{padding-left:22px}
+.col:last-child{border-right:0}
+.col h3{font-size:clamp(1.4rem,2.2vw,1.8rem);line-height:1.08}
+.col p{margin-top:12px;color:var(--muted);font-size:.98rem}
+.col .bar{display:block;height:6px;width:48px;border-radius:3px;margin-bottom:20px}
+@media (max-width:900px){.range-head{grid-template-columns:1fr}.cols{grid-template-columns:1fr 1fr}.col{padding:24px 18px 24px 0;border-bottom:1px solid var(--line)}.col:nth-child(2n){border-right:0;padding-left:18px}.col:nth-child(3){padding-left:0}}
+@media (max-width:540px){.cols{grid-template-columns:1fr}.col,.col + .col{padding:24px 0;border-right:0}}
+
+/* chips */
+.chips-sec{padding:clamp(90px,11vw,140px) 0}
+.chips-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:20px}
+.chips-head p{color:var(--muted);max-width:40ch;font-size:1.06rem}
+.chip-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:44px}
+.card{background:var(--paper);border-radius:6px;overflow:hidden;box-shadow:0 1px 0 rgba(30,33,36,.06),0 20px 34px -28px rgba(30,33,36,.55)}
+.card .c{height:clamp(150px,16vw,200px);background:var(--c);transition:transform .5s var(--ease);transform-origin:50% 0}
+.card:hover .c{transform:scaleY(1.04)}
+.card .t{position:relative;padding:18px 18px 20px;background:var(--paper)}
+.card h3{font-size:1.4rem;line-height:1.1}
+.card p{margin-top:8px;color:var(--muted);font-size:.95rem}
+.card p b{color:var(--ink);font-weight:600}
+@media (max-width:860px){.chip-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.chip-grid{grid-template-columns:1fr}}
+
+/* reviews */
+.rev{background:var(--chalk-2);padding:clamp(90px,11vw,130px) 0 clamp(70px,8vw,100px);overflow:hidden}
+.rev-top{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(28px,6vw,90px);align-items:start}
+.score{font:400 clamp(6rem,14vw,10rem)/.82 var(--serif);color:var(--heritage)}
+.rev-top .meta{margin-top:14px;font-weight:600;color:var(--muted)}
+.rev-top .meta .stars{display:flex;margin-bottom:8px}
+.rev-top .meta .stars .icon{width:1.5em;height:1.5em}
+.feature{margin:0;font:400 clamp(1.6rem,3.2vw,2.6rem)/1.18 var(--serif)}
+.feature .w{display:inline-block}
+.feature + cite{display:block;margin-top:18px;font-style:normal;font-weight:700;color:var(--muted)}
+@media (max-width:760px){.rev-top{grid-template-columns:1fr}}
+.marquee{margin-top:clamp(50px,7vw,76px);overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.marquee + .marquee{margin-top:18px}
+.track{display:flex;align-items:flex-start;width:max-content;will-change:transform}
+.q{flex:none;width:min(390px,80vw);margin:0 9px;padding:24px 24px 20px;background:var(--paper);border-radius:16px;box-shadow:0 1px 0 rgba(30,33,36,.06),0 18px 34px -26px rgba(30,33,36,.5)}
+.q.long{width:min(500px,86vw)}
+.q .stars .icon{width:1em;height:1em}
+.q blockquote{margin:12px 0 0;font-size:1rem;line-height:1.55}
+.q footer{margin-top:14px;display:flex;align-items:center;gap:10px;font-weight:700;font-size:.92rem}
+.q footer i{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font:400 1rem/1 var(--serif);font-style:normal}
+.q footer span{font-weight:500;color:var(--muted)}
+.phrases .track>span{display:inline-flex;align-items:center;gap:24px;padding-right:24px;white-space:nowrap;font:400 clamp(1.5rem,3vw,2.4rem)/1.2 var(--serif)}
+.phrases .dot{width:18px;height:18px;border-radius:50%;flex:none}
+.rev .more{margin-top:34px;text-align:center;font-weight:700}
+
+/* contact */
+.contact{background:var(--heritage);color:#F1EEE7;padding:clamp(90px,11vw,130px) 0 40px}
+.c-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(30px,6vw,80px);align-items:end}
+.contact h2{font-size:clamp(2.4rem,5.8vw,4.8rem)}
+.contact h2 em{font-style:italic;color:var(--ochre)}
+.contact .sub{margin-top:18px;color:#C9D5DB;max-width:46ch;font-size:1.06rem}
+.bigphone{display:inline-block;margin-top:28px;font:400 clamp(2.4rem,6vw,4.4rem)/1 var(--serif);color:#fff;text-decoration:none;border-bottom:3px solid var(--ochre);padding-bottom:6px}
+.bigphone:hover{color:var(--ochre)}
+.ways{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.18)}
+.ways li{border-bottom:1px solid rgba(255,255,255,.18)}
+.ways a,.ways div{display:flex;gap:14px;align-items:center;padding:17px 2px;text-decoration:none}
+.ways .ic{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.09);flex:none}
+.ways b{display:block}
+.ways span{color:#B5C4CC;font-size:.94rem}
+.ways a:hover b{color:var(--ochre)}
+.foot{margin-top:80px;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:14px 26px;justify-content:space-between;color:#9FB2BC;font-size:.9rem}
+.foot a{color:#C9D5DB}
+@media (max-width:880px){.c-grid{grid-template-columns:1fr}}
+
+.mbar{display:none}
+@media (max-width:720px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:10px;right:10px;bottom:10px;z-index:60;padding:8px;border-radius:999px;background:rgba(30,33,36,.95);box-shadow:0 12px 30px -10px rgba(0,0,0,.5)}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:8px;min-height:52px;border-radius:999px;font-weight:700;text-decoration:none}
+  .mbar .c{background:var(--chalk);color:var(--ink)}.mbar .w{background:var(--wa);color:#fff}
+  body{padding-bottom:86px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8c.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.5l2.9 6.2 6.8.7-5.1 4.6 1.4 6.7L12 17.3l-6 3.4 1.4-6.7-5.1-4.6 6.8-.7z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+  <symbol id="i-g" viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3zM12 22c2.7 0 5-.9 6.6-2.4l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.8-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22zM6.4 14a6 6 0 0 1 0-3.9V7.5H3.1a10 10 0 0 0 0 9zM12 5.9c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 0 0 3.1 7.5l3.3 2.6C7.2 7.7 9.4 5.9 12 5.9z"/></symbol>
+</defs></svg>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="mark" href="#top" aria-label="J-S-S Decorating Services, back to top"><b>J<i>·</i>S<i>·</i>S</b><span>Decorating Services</span></a>
+    <nav class="nav-links" aria-label="Main"><a href="#colour">Colour</a><a href="#services">Services</a><a href="#jobs">Recent jobs</a><a href="#reviews">Reviews</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-a" href="tel:+447961694463"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span>07961 694463</span></a>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 id="h1">Your decoration project, just how you <em>imagined</em> it.</h1>
+      <p class="lede fade">J-S-S is a small, professional team based in Oxfordshire, highly experienced with period properties and new builds. From high-end decorating to a freshen up between tenants, with skilled colour coordinating to guide you.</p>
+      <div class="cta fade">
+        <a class="btn btn-a" href="tel:+447961694463"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call 07961 694463</a>
+        <a class="btn btn-wa" href="https://wa.me/447961694463?text=Hi%20JSS%2C%20I%20found%20you%20on%20your%20website.%20I%27d%20like%20a%20quote%20for%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+      </div>
+      <p class="proof fade"><b>4.9</b><span class="stars" aria-label="4.9 out of 5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><span>from 35 <a href="#reviews">Google reviews</a></span></p>
+    </div>
+
+    <div class="room" id="colour">
+      <div class="room-frame">
+        <svg viewBox="0 0 520 420" role="img" aria-label="A panelled period room, shown in the selected colour scheme">
+          <rect data-p="wall" x="0" y="0" width="520" height="420"/>
+          <rect id="wipe" x="0" y="0" width="520" height="400" fill="transparent"/>
+          <rect data-p="wood" x="0" y="96" width="520" height="9"/><path class="mo" d="M0 96H520M0 105H520"/>
+          <rect class="mo" x="70" y="140" width="160" height="96"/><rect class="hl" x="76" y="146" width="148" height="84"/>
+          <path class="mo" d="M150 128v12"/>
+          <rect data-p="wood" x="0" y="246" width="306" height="10"/><path class="mo" d="M0 246H306M0 256H306"/>
+          <rect class="mo" x="22" y="272" width="128" height="102"/><rect class="mo" x="30" y="280" width="112" height="86"/>
+          <rect class="mo" x="164" y="272" width="128" height="102"/><rect class="mo" x="172" y="280" width="112" height="86"/>
+          <rect data-p="wood" x="306" y="110" width="160" height="290"/><path class="mo" d="M306 110V400M466 110V400M306 110H466"/>
+          <rect data-p="door" x="320" y="124" width="132" height="276"/>
+          <rect class="mo" x="334" y="140" width="46" height="100"/><rect class="mo" x="392" y="140" width="46" height="100"/>
+          <rect class="mo" x="334" y="256" width="46" height="128"/><rect class="mo" x="392" y="256" width="46" height="128"/>
+          <rect class="hl" x="336" y="142" width="42" height="96"/><rect class="hl" x="394" y="142" width="42" height="96"/>
+          <circle cx="440" cy="262" r="5" fill="#C99A3B"/>
+          <rect data-p="wood" x="0" y="380" width="306" height="20"/><rect data-p="wood" x="466" y="380" width="54" height="20"/><path class="mo" d="M0 380H306M466 380H520"/>
+          <rect x="0" y="400" width="520" height="20" fill="#A98B6A"/><path d="M0 400H520" stroke="rgba(0,0,0,.25)"/>
+          <path d="M60 400v20M170 400v20M290 400v20M400 400v20M490 400v20" stroke="rgba(0,0,0,.12)"/>
+        </svg>
+      </div>
+      <div class="palettes" role="group" aria-label="Colour schemes">
+        <button class="pal" type="button" aria-pressed="true" data-wall="#D9D4C5" data-wood="#F1EDE3" data-door="#3E5A66" data-acc="#3E5A66"><span class="sw"><i style="background:#D9D4C5"></i><i style="background:#F1EDE3"></i><i style="background:#3E5A66"></i></span>Period calm</button>
+        <button class="pal" type="button" aria-pressed="false" data-wall="#D8B98C" data-wood="#F3EBDD" data-door="#6E2B2A" data-acc="#8A3A33"><span class="sw"><i style="background:#D8B98C"></i><i style="background:#F3EBDD"></i><i style="background:#6E2B2A"></i></span>Warm heritage</button>
+        <button class="pal" type="button" aria-pressed="false" data-wall="#2C4A57" data-wood="#2C4A57" data-door="#1E3540" data-acc="#2C4A57"><span class="sw"><i style="background:#2C4A57"></i><i style="background:#1E3540"></i><i style="background:#C99A3B"></i></span>Colour drenched</button>
+        <button class="pal" type="button" aria-pressed="false" data-wall="#EEEBE4" data-wood="#FFFFFF" data-door="#8F9E83" data-acc="#5F6F55"><span class="sw"><i style="background:#EEEBE4"></i><i style="background:#FFFFFF"></i><i style="background:#8F9E83"></i></span>Fresh for tenants</button>
+      </div>
+      <p class="room-cap">Skilled colour coordinating: try a scheme on this room, then talk it through with the team.</p>
+    </div>
+  </div>
+</section>
+
+<section class="range" id="services" aria-labelledby="sv-h">
+  <div class="wrap">
+    <div class="range-head">
+      <h2 id="sv-h">High-end decorating to just a freshen up.</h2>
+      <p>Reliable, hardworking and fairly priced, taking pride in every part of the project. And a resourceful team covering all trades when the job turns up more.</p>
+    </div>
+    <div class="cols">
+      <div class="col"><span class="bar" style="background:#3E5A66"></span><h3>High-end decorating</h3><p>Panelling, glosswork and full interiors, finished with the extra care that makes it look right.</p></div>
+      <div class="col"><span class="bar" style="background:#6E2B2A"></span><h3>Period properties &amp; new builds</h3><p>Highly experienced in maintaining all aspects of older and newer homes, inside and out.</p></div>
+      <div class="col"><span class="bar" style="background:#8F9E83"></span><h3>Tenant moves &amp; house sales</h3><p>Rentals refreshed between tenants and homes made ready to sell, on time and left clean.</p></div>
+      <div class="col"><span class="bar" style="background:#C99A3B"></span><h3>All trades</h3><p>Carpentry, plaster repairs, repointing, roof repairs and minor plumbing, all from one team.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="chips-sec" id="jobs" aria-labelledby="jb-h">
+  <div class="wrap">
+    <div class="chips-head"><h2 id="jb-h">Recent jobs, by colour.</h2><p>A few of the projects customers have written about on Google.</p></div>
+    <div class="chip-grid">
+      <article class="card" style="--c:#3E5A66"><div class="c"></div><div class="t"><h3>Hallway panelling</h3><p>“Very happy with how it turned out.” <b>Cody D.</b></p></div></article>
+      <article class="card" style="--c:#6E2B2A"><div class="c"></div><div class="t"><h3>A front door, stripped back in the cold</h3><p>“The end result is fantastic.” <b>Omar K.</b></p></div></article>
+      <article class="card" style="--c:#C99A3B"><div class="c"></div><div class="t"><h3>The front of a house, in 40°C heat</h3><p>“The result was excellent!” <b>Sally C.</b></p></div></article>
+      <article class="card" style="--c:#E7A9B1"><div class="c"></div><div class="t"><h3>Goodbye, fluorescent pink</h3><p>“Our kids love their new rooms!” <b>Elena V.</b></p></div></article>
+      <article class="card" style="--c:#8F9E83"><div class="c"></div><div class="t"><h3>A tenanted bedroom, at short notice</h3><p>“No hidden costs or surprises.” <b>Tiggy F.</b></p></div></article>
+      <article class="card" style="--c:#D9D4C5"><div class="c"></div><div class="t"><h3>Hall, stairs, landing… and the roof</h3><p>“Picked up early before it got worse.” <b>Karen CS</b></p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="reviews" aria-labelledby="rv-h">
+  <div class="wrap">
+    <h2 id="rv-h" class="sr">Reviews</h2>
+    <div class="rev-top">
+      <div><div class="score" id="score">4.9</div>
+        <div class="meta"><span class="stars" aria-label="4.9 out of 5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span>from 35 Google reviews</div></div>
+      <div>
+        <blockquote class="feature" id="feature">“Everything was done incredibly quickly, to a superb standard and leaving no mess. I can’t recommend them highly enough!”</blockquote>
+        <cite>Carole Edwards</cite>
+      </div>
+    </div>
+  </div>
+  <div class="marquee quotes" aria-label="Google reviews"><div class="track">
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>I spent months trying to find someone to adapt my vintage bed to support modern day slats. So many people let me down. Then after my most recent plea, Jordan from JSS made contact and within days had dispatched Carl, with his carpentry skills.In just a couple of hours the bed was sorted. So much more than just a painting and decorating team! Thank you all. You are amazing.</blockquote><footer><i style="background:#3E5A66">K</i>Karen Summers <span>· Google</span></footer></figure>
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>We are very pleased with the end result, Jord did great work on our hallway panelling and painting and took the time to make sure that we were happy with the final work. Very happy with how it turned out and the extra care he took to make sure that everything was in line with our expectations. I would happily recommend his services.</blockquote><footer><i style="background:#6E2B2A">C</i>Cody Dillabough <span>· Google</span></footer></figure>
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>This is the third time we’ve had JSS carry out work for us. What started as decorating the hall, stairs and landing turned into extra work on the windows, repointing, and some roof repairs. We didn’t realise the roof needed doing, so we really appreciated it being picked up early before it got worse. They kept us updated with videos throughout showing us the issues and the repair work which was really helpful. Very happy with all the work - thank you!</blockquote><footer><i style="background:#946B1C">K</i>Karen CS <span>· Google</span></footer></figure>
+    <figure class="q"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>Jord responded quickly to our request to fix a crack in the ceiling and fit a new curtain pully system. His team also installed some bathroom fixings. All work completed to a high standard. We would recommend Jord for any similar work. Mike and Heather.</blockquote><footer><i style="background:#5F6F55">G</i>Gryphon Park <span>· Google</span></footer></figure>
+    <figure class="q"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>Very well pleased with the quality of work Jord has completed at my home. He repainted the living room, dining room and kitchen, filling in all the cracks and resurfacing the plasterwork on the kitchen wall where my old gas boiler had been fixed. I can highly recommend and will employ him again.</blockquote><footer><i style="background:#2C4A57">M</i>Margaret Pritchard <span>· Google</span></footer></figure>
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>Jord and his team are great. We've been very pleased with his work and it is very neat and completed to a high standard. He worked very hard on our front door in very cold weather to remove all the paint and then to repaint it and the end result is fantastic. He has always been friendly and I would definitely recommend him. Communication with him has been mostly straightforward and on many occasions, he has been responsive and also arrived when he said he would.</blockquote><footer><i style="background:#8A3A33">O</i>Omar Khan <span>· Google</span></footer></figure>
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>JSS are absolutely fantastic! Jord helped me out at very short notice to repaint a bedroom in a tenanted property. Extremely professional, well priced and great for live out landlords, as they’re trustworthy with good communication. No hidden costs or surprises. They also went the extra mile to replace shower sealant to avoid further water marks. Couldn’t recommend highly enough and will be using again in the future. Thank you!</blockquote><footer><i style="background:#3E5A66">T</i>Tiggy Fairfax <span>· Google</span></footer></figure>
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>Jord was very competitive and professional. He worked quickly to refurbish aspects of our rental property for our new tenants. He completed work from repainting, glosswork and door refitting to minor plumbing. He provided videos and photos of completed work. Both our tenants and ourselves are very pleased! We would recommend and use him again.</blockquote><footer><i style="background:#6E2B2A">J</i>Joanna Heath-Whyte <span>· Google</span></footer></figure>
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>These guys are phenomenal. Jord and his team have just repainted the entire interior walls throughout the house, sanded down and repainted the porch, fixed some curtain poles and a door lock for me, not to mention helping me fetch and carry furniture to and from the garage and my car. Everything was done incredibly quickly, to a superb standard and leaving no mess. I can’t recommend them highly enough!</blockquote><footer><i style="background:#946B1C">C</i>Carole Edwards <span>· Google</span></footer></figure>
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>Highly recommended. Jord and his team carried out the painting work to the front of my house in very difficult 40 degree C temperatures but the result was excellent! Very professional, great customer communication, reliable and punctual, reasonably priced, they included the painting of other parts that they noticed also needed doing and generally did everything they could to make the job a success. Nice friendly obliging and helpful team. I really recommend them.</blockquote><footer><i style="background:#5F6F55">S</i>Sally CARAYON <span>· Google</span></footer></figure>
+    <figure class="q"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>Jordan did a really good job painting the outside of my house and carrying out some tricky roof repairs. He has a very positive attitude and a totally can do approach, and is a lovely guy to have around while the work is going on. Strongly recommended, and very good value.</blockquote><footer><i style="background:#2C4A57">J</i>James Terry <span>· Google</span></footer></figure>
+    <figure class="q long"><span class="stars" aria-label="5 stars"><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg><svg class="icon"><use href="#i-star"/></svg></span><blockquote>Jord responded really quickly to our request for a quote and was able to start work within a few days. He stripped all the wallpaper off of our son's bedroom and then painted this and our baby's room, which was fluorescent pink. He was also able to save us some money by skimming and filling in the uneven walls after stripping the wallpaper, so we didn't have to pay loads for a plasterer to come in, and then did a great job with the paint. While he was here he kindly patched up the walls in our main bedroom where we'd had electrical work done. We're really pleased with the results and our kids love their new rooms!</blockquote><footer><i style="background:#8A3A33">E</i>Elena Villarreal <span>· Google</span></footer></figure>
+  </div></div>
+  <div class="marquee phrases" aria-hidden="true"><div class="track"><span>So much more than just a painting and decorating team <i class="dot" style="background:#3E5A66"></i> No hidden costs or surprises <i class="dot" style="background:#6E2B2A"></i> A totally can do approach <i class="dot" style="background:#C99A3B"></i> Leaving no mess <i class="dot" style="background:#8F9E83"></i> Reliable and punctual <i class="dot" style="background:#E7A9B1"></i> Very good value <i class="dot" style="background:#2C4A57"></i></span></div></div>
+  <p class="more"><a href="https://www.google.com/search?q=J-S-S+Decorating+Services" target="_blank" rel="noopener">Read all 35 reviews on Google</a></p>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="ct-h">
+  <div class="wrap">
+    <div class="c-grid">
+      <div>
+        <h2 id="ct-h">Tell us how you <em>imagined</em> it.</h2>
+        <p class="sub">A whole house, one room, a rental between tenants or a quick refresh before a sale. Call or message Jord and the team for a quote.</p>
+        <a class="bigphone" href="tel:+447961694463">07961 694463</a>
+        <div class="cta"><a class="btn btn-wa" href="https://wa.me/447961694463?text=Hi%20JSS%2C%20I%20found%20you%20on%20your%20website.%20I%27d%20like%20a%20quote%20for%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>Message on WhatsApp</a></div>
+      </div>
+      <ul class="ways">
+        <li><div><span class="ic"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span><p><b>Based in Oxfordshire</b><span>Homes, rentals and period properties</span></p></div></li>
+        <li><div><span class="ic"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span><p><b>Open 24 hours</b><span>Call or message any time</span></p></div></li>
+        <li><a href="https://www.google.com/search?q=J-S-S+Decorating+Services" target="_blank" rel="noopener"><span class="ic"><svg class="icon" aria-hidden="true"><use href="#i-g"/></svg></span><p><b>Google</b><span>4.9 from 35 reviews</span></p></a></li>
+      </ul>
+    </div>
+    <div class="foot"><span>© 2026 J-S-S Decorating Services · Oxfordshire</span><span>Reviews quoted from Google</span><a href="#top">Back to top</a></div>
+  </div>
+</section>
+</main>
+
+<div class="mbar">
+  <a class="c" href="tel:+447961694463"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>Call</a>
+  <a class="w" href="https://wa.me/447961694463?text=Hi%20JSS%2C%20I%20found%20you%20on%20your%20website.%20I%27d%20like%20a%20quote%20for%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/SplitText.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.27/dist/lenis.min.js"></script>
+<script>
+(function(){
+  var nav=document.getElementById('nav');
+  function ns(){nav.classList.toggle('solid',window.scrollY>30);} ns(); window.addEventListener('scroll',ns,{passive:true});
+
+  // colour coordinator: works without GSAP, the page accent follows the chosen scheme
+  var root=document.documentElement, pals=[].slice.call(document.querySelectorAll('.pal')), wipe=document.getElementById('wipe');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches, auto=null, idx=0;
+  function apply(i,user){
+    idx=i; var b=pals[i];
+    pals.forEach(function(p){p.setAttribute('aria-pressed',p===b?'true':'false');});
+    if(window.gsap && !reduce){
+      gsap.killTweensOf(wipe);
+      gsap.fromTo(wipe,{attr:{fill:b.dataset.wall},clipPath:'inset(0 100% 0 0)'},{clipPath:'inset(0 0% 0 0)',duration:.9,ease:'power2.inOut',onComplete:function(){root.style.setProperty('--wall',b.dataset.wall);gsap.set(wipe,{attr:{fill:'transparent'}});}});
+    } else root.style.setProperty('--wall',b.dataset.wall);
+    root.style.setProperty('--wood',b.dataset.wood);
+    root.style.setProperty('--door',b.dataset.door);
+    root.style.setProperty('--acc',b.dataset.acc);
+    if(user && auto){clearInterval(auto);auto=null;}
+  }
+  pals.forEach(function(p,i){p.addEventListener('click',function(){apply(i,true);});});
+  if(!reduce) auto=setInterval(function(){ if(!document.hidden) apply((idx+1)%pals.length,false); },4200);
+
+  if(!window.gsap) return;
+  gsap.registerPlugin(ScrollTrigger,SplitText);
+  ScrollTrigger.config({ignoreMobileResize:true});
+  var mm=gsap.matchMedia();
+  mm.add('(prefers-reduced-motion: no-preference)',function(){
+    var lenis=null, raf=null;
+    if(window.Lenis){ lenis=new Lenis({anchors:{offset:-84}}); lenis.on('scroll',ScrollTrigger.update); raf=function(t){lenis.raf(t*1000);}; gsap.ticker.add(raf); gsap.ticker.lagSmoothing(0); }
+
+    // hero: the room is painted in, top to bottom, as the headline arrives
+    var rs={trigger:'.room-frame',start:'top 85%',once:true};
+    gsap.from('.room-frame',{clipPath:'inset(0 0 100% 0 round 18px)',duration:1.3,ease:'power3.inOut',delay:.3,scrollTrigger:rs});
+    gsap.from('.room-frame svg',{scale:1.08,duration:1.6,ease:'power3.out',delay:.3,scrollTrigger:rs});
+    SplitText.create('#h1',{type:'lines',mask:'lines',autoSplit:true,onSplit:function(s){return gsap.from(s.lines,{yPercent:105,duration:1,ease:'expo.out',stagger:.09,delay:.1});}});
+    gsap.from('.hero .fade, .palettes, .room-cap',{y:16,opacity:0,duration:.8,ease:'power3.out',stagger:.08,delay:.6});
+
+    gsap.utils.toArray('.range h2, .chips-sec h2, .contact h2').forEach(function(h){
+      SplitText.create(h,{type:'lines',mask:'lines',autoSplit:true,onSplit:function(s){return gsap.from(s.lines,{yPercent:105,duration:.9,ease:'expo.out',stagger:.08,scrollTrigger:{trigger:h,start:'top 86%'}});}});
+    });
+    ScrollTrigger.batch('.col',{start:'top 90%',once:true,onEnter:function(els){
+      gsap.from(els,{y:24,opacity:0,duration:.8,ease:'power3.out',stagger:.09});
+      gsap.from(els.map(function(e){return e.querySelector('.bar');}),{scaleX:0,transformOrigin:'0 50%',duration:.8,ease:'expo.out',stagger:.09,delay:.2});
+    }});
+
+    // paint chips: each colour brushes down, then the label settles
+    ScrollTrigger.batch('.card',{start:'top 88%',once:true,onEnter:function(els){
+      gsap.from(els.map(function(e){return e.querySelector('.c');}),{clipPath:'inset(0 0 100% 0)',duration:.9,ease:'power3.inOut',stagger:.1});
+      gsap.from(els.map(function(e){return e.querySelector('.t');}),{y:14,opacity:0,duration:.7,ease:'power3.out',stagger:.1,delay:.35});
+    }});
+
+    var sc=document.getElementById('score'), o={v:0};
+    gsap.to(o,{v:4.9,duration:1.2,ease:'power2.out',scrollTrigger:{trigger:sc,start:'top 85%'},onUpdate:function(){sc.textContent=o.v.toFixed(1);}});
+    var q=SplitText.create('#feature',{type:'words',wordsClass:'w'});
+    gsap.from(q.words,{opacity:.15,stagger:.05,ease:'none',scrollTrigger:{trigger:'#feature',start:'top 80%',end:'bottom 50%',scrub:true}});
+
+    /* marquee pattern adapted from React Bits by David Haz (MIT + Commons Clause) */
+    document.querySelectorAll('.marquee').forEach(function(row,i){
+      var tr=row.querySelector('.track'), h=tr.innerHTML, dup=h.replace(/<figure class="q/g,'<figure aria-hidden="true" class="q');
+      tr.insertAdjacentHTML('beforeend',dup); if(row.classList.contains('phrases')) tr.insertAdjacentHTML('beforeend',dup+dup);
+      var left=i%2===0, tw=gsap.fromTo(tr,{xPercent:left?0:-50},{xPercent:left?-50:0,ease:'none',duration:row.classList.contains('quotes')?110:42,repeat:-1});
+      row.addEventListener('mouseenter',function(){gsap.to(tw,{timeScale:0,duration:.5});});
+      row.addEventListener('mouseleave',function(){gsap.to(tw,{timeScale:1,duration:.5});});
+      if(lenis) lenis.on('scroll',function(e){gsap.to(tw,{timeScale:1+Math.min(Math.abs(e.velocity)/8,4),duration:.2,overwrite:true});gsap.to(tw,{timeScale:1,duration:1,delay:.25});});
+    });
+
+    gsap.from('.bigphone',{yPercent:40,opacity:0,duration:.9,ease:'expo.out',scrollTrigger:{trigger:'.bigphone',start:'top 92%'}});
+    ScrollTrigger.batch('.ways li',{start:'top 92%',once:true,onEnter:function(els){gsap.from(els,{x:20,opacity:0,duration:.7,ease:'power3.out',stagger:.07});}});
+    return function(){ if(raf) gsap.ticker.remove(raf); if(lenis) lenis.destroy(); };
+  });
+})();
+</script>
+</body>
+</html>
